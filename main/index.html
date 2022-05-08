@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <title>OSS Team23 Main Page</title>
+    </head>
+    <body>
+        <div id="top-content">
+            <div class="top-container">
+                <div class="top-text">
+                    <span style="font-size:1.2em;">
+                        <h1>
+                            <strong>WELCOME TO TEAM23!</strong>
+                        </h1>
+                        <p>
+                            이 프로젝트는 리그 오브 레전드 게임 국제 대회인 LoL MSI가 국내에서 개최되는 기념으로
+                            대회를 소개하는 웹 페이지 개발을 목적으로 뒀습니다.
+                        </p>
+                        <p>
+                            게임을 모르는 분들도 읽으실 수 있도록 리그 오브 레전드에 대한 설명도 포함되어 있습니다.
+                        </p>
+                    </span>
+                </div>
+                <img src="poroWallPaper.jpg" class="mx-auto d-block" alt="poroWallPaper">
+            </div>
+        </div>
+
+        <div id="floating-tab">
+            <div class="shadow-sm bg-light py-3">
+                <button type="button" id="msiTabButton" class="btn btn-outline-dark me-5">MSI대회 정보</button>
+                <button type="button" id="teamTabButton" class="btn btn-outline-dark me-5">팀 정보</button>
+                <button type="button" id="lolTabButton" class="btn btn-outline-dark me-5">롤 정보</button>
+                <button type="button" id="videoTabButton" class="btn btn-outline-dark me-5">추천 영상</button>
+            </div>
+        </div>
+
+        <div id="main-paragraph">
+            <div id="wrapper">
+                <div id="msi-info">
+                    <div class="container">
+                        <br><br><br><br><br><br><br><br><br>
+                        <h2><strong>MSI 정보</strong></h2>
+                        <div class="paragraph">
+                            <h3>MSI가 뭔가요?</h3>
+                            <img src="msiThumbnail.jpg" class="my-3 mx-auto d-block" alt="msiThumbnail" width="600px">
+                            <p>
+                                LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 팀이 출전해 세계 최강을 가리는 공식 리그 오브 레전드 게임 국제대회입니다.
+                                흔히 롤드컵이라 불리는 리그 오브 레전드 월드 챔피언십과 MSI가 혼동되는데, 롤드컵은 
+                            </p>
+                        </div>
+                        
+                        <div class="paragraph">
+                            <h3>MSI 경기 일정</h3>
+                            <ol>
+                                <li>그룹 스테이지</li>
+                                <ul>
+                                    <li>날짜: 2022년 5월 10일 ~ 5월 15일</li>
+                                    <li>장소: 부산 e스포츠 경기장 브레나</li>
+                                    <li>방식: 단판 더블 라운드 로빈 (각 팀과 단판으로 2번씩 대결)</li>
+                                </ul>
+                                <li>럼블 스테이지</li>
+                                <ul>
+                                    <li>날짜: 2022년 5월 20일 ~ 5월 24일</li>
+                                    <li>장소: 벡스코 제1 전시장</li>
+                                    <li>방식: 단판 더블 라운드 로빈 (그룹 스테이지와 동일)</li>
+                                </ul>
+                                <li>녹아웃 스테이지</li>
+                                <ul>
+                                    <li>날짜: 2022년 5월 27일 ~ 5월 29일</li>
+                                    <li>장소: 벡스코 제1 전시장</li>
+                                    <li>방식: BO5 (5전 3선승)</li>
+                                    <ul>
+                                        <li>4강: 2022년 5월 25일 ~ 5월29일</li>
+                                        <li>결승: 2022년 5월 29일 (우승시 롤드컵 시드권 혜택)</li>
+                                    </ul>
+                                </ul>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="team-info">
+                    <div class="container">
+                        <h2><strong>팀 정보</strong></h2>
+                        <div class="paragraph">
+                            <p>(팀 정보)</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="lol-info">
+                    <div class="container">
+                        <h2><strong>롤 정보</strong></h2>
+                        <div class="paragraph">
+                            <p>(롤 정보)</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="video-recommend">
+                    <div class="container">
+                        <h2><strong>추천 영상</strong></h2>
+                        <div class="paragraph">
+                            <p>(추천 영상)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            let topContentHeight = document.getElementById("top-content").clientHeight;
+            let floatingTab = document.getElementById("floating-tab");
+
+            let isTop = true;
+
+            window.addEventListener('scroll', () => {
+                let scrollLocation = document.documentElement.scrollTop;
+                
+                if(scrollLocation >= topContentHeight){
+                    if(!isTop) return;
+                    floatingTab.style.position = "fixed";
+                    floatingTab.style.top = "0%";
+                    isTop = false;
+                }
+                else{
+                    if(isTop) return;
+                    floatingTab.style.removeProperty("position");
+                    floatingTab.style.removeProperty("top");
+                    isTop = true;
+                }
+            });
+
+            let tabBtnArr = document.getElementsByClassName("btn btn-outline-dark me-5");
+            
+            let targetMsi = document.getElementById("msi-info");
+            let targetMsiTop = targetMsi.getBoundingClientRect().top;
+            let targetTeam = document.getElementById("team-info");
+            let targetTeamTop = targetTeam.getBoundingClientRect().top;
+            let targetLol = document.getElementById("lol-info");
+            let targetLolTop = targetLol.getBoundingClientRect().top;
+            let targetVideo = document.getElementById("video-recommend");
+            let targetVideoTop = targetVideo.getBoundingClientRect().top;
+
+            const speed = 500;
+            let targetTop;
+
+            for(let i = 0; i < tabBtnArr.length; i++){
+                tabBtnArr[i].addEventListener('click', function(e){
+                    e.preventDefault();
+
+                    console.log("button CLICKED");
+
+                    if(tabBtnArr[i].id === "msiTabButton"){
+                        smoothScroll(targetMsiTop);
+                    }
+                    else if(tabBtnArr[i].id === "teamTabButton"){
+                        smoothScroll(targetTeamTop);
+                    }
+                    else if(tabBtnArr[i].id === "lolTabButton"){
+                        smoothScroll(targetLolTop);
+                    }
+                    else if(tabBtnArr[i].id === "videoTabButton"){
+                        smoothScroll(targetVideoTop);
+                    }
+                });
+            }
+            
+            function smoothScroll(targetTop){
+                console.log(targetTop);
+                $('html, body').animate({
+                    scrollTop: targetTop
+                }, speed);
+            }
+
+        </script>
+    </body>
+</html>
