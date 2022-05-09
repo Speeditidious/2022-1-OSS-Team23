@@ -216,13 +216,13 @@
             let tabBtnArr = document.getElementsByClassName("btn btn-outline-dark me-5");
             
             let targetMsi = document.getElementById("msi-info");
-            let targetMsiTop = targetMsi.getBoundingClientRect().top;
+            let targetMsiTop;
             let targetTeam = document.getElementById("team-info");
-            let targetTeamTop = targetTeam.getBoundingClientRect().top;
+            let targetTeamTop;
             let targetLol = document.getElementById("lol-info");
-            let targetLolTop = targetLol.getBoundingClientRect().top;
+            let targetLolTop;
             let targetVideo = document.getElementById("video-recommend");
-            let targetVideoTop = targetVideo.getBoundingClientRect().top;
+            let targetVideoTop;
 
             const speed = 500;
             let targetTop;
@@ -231,18 +231,20 @@
                 tabBtnArr[i].addEventListener('click', function(e){
                     e.preventDefault();
 
-                    console.log("button CLICKED");
-
                     if(tabBtnArr[i].id === "msiTabButton"){
+                        targetMsiTop = window.pageYOffset + targetMsi.getBoundingClientRect().top;
                         smoothScrollTop(targetMsiTop);
                     }
                     else if(tabBtnArr[i].id === "teamTabButton"){
+                        targetTeamTop = window.pageYOffset + targetTeam.getBoundingClientRect().top;
                         smoothScrollTop(targetTeamTop);
                     }
                     else if(tabBtnArr[i].id === "lolTabButton"){
+                        targetLolTop = window.pageYOffset + targetLol.getBoundingClientRect().top;
                         smoothScrollTop(targetLolTop);
                     }
                     else if(tabBtnArr[i].id === "videoTabButton"){
+                        targetVideoTop = window.pageYOffset + targetVideo.getBoundingClientRect().top;
                         smoothScrollTop(targetVideoTop);
                     }
                 });
@@ -294,7 +296,6 @@
                 btnTeamImage[i].addEventListener('click', ()=> {
                     btnTeamImageSource.src = "./msiTeamImage/msiTeamImage" + (i+1) + ".png";
                 });
-                console.log("./msiTeamImage/msiTeamImage" + (i+1) + ".png");
             }
         </script>
     </body>
