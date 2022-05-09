@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
         <title>OSS Team23 Main Page</title>
     </head>
@@ -134,8 +135,34 @@
                 <div id="team-info">
                     <div class="container">
                         <h2><strong>팀 정보</strong></h2>
-                        <div class="paragraph">
-                            <p>(팀 정보)</p>
+                        <div class="paragraph" style="text-align:center;">
+                            <div id="teamImageSelected" style="margin-top: 50px; margin-bottom: 50px;">
+                                <img src="./msiTeamImage/msiTeamImage1.png" alt="teamImage" width="600px">
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <button type="button" class="btn btn-outline-secondary me-3">
+                                    <i class="bi bi-caret-left-fill" style="font-size: 2rem;"></i>
+                                </button>
+                                <div id="team-card-container">
+                                    <button type="button" class="btn_teamImage" id="btn_team1"><img src="./msiTeamCard/msiTeamCard_A1.png" class="mx-1" alt="A1" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team2"><img src="./msiTeamCard/msiTeamCard_A2.png" class="mx-1" alt="A2" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team3"><img src="./msiTeamCard/msiTeamCard_A3.png" class="mx-1" alt="A3" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team4"><img src="./msiTeamCard/msiTeamCard_A4.png" class="mx-1" alt="A4" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team5"><img src="./msiTeamCard/msiTeamCard_B1.png" class="mx-1" alt="B1" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team6"><img src="./msiTeamCard/msiTeamCard_B2.png" class="mx-1" alt="B2" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team7"><img src="./msiTeamCard/msiTeamCard_B3.png" class="mx-1" alt="B3" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team8"><img src="./msiTeamCard/msiTeamCard_B4.png" class="mx-1" alt="B4" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team9"><img src="./msiTeamCard/msiTeamCard_C1.png" class="mx-1" alt="C1" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team10"><img src="./msiTeamCard/msiTeamCard_C2.png" class="mx-1" alt="C2" width="180px"></button>
+                                    <button type="button" class="btn_teamImage" id="btn_team11"><img src="./msiTeamCard/msiTeamCard_C3.png" class="mx-1" alt="C3" width="180px"></button>
+                                </div>
+                                <button type="button" class="btn btn-outline-secondary ms-3">
+                                    <i class="bi bi-caret-right-fill" style="font-size: 2rem;"></i>
+                                </button>
+                            </div>
+                            <div class="mx-auto d-block" style="margin-top: 50px;">
+                                <button type="button" class="btn btn-primary" style="font-size: 1.5rem">입장</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,6 +190,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script>
+            //Floating Tab
             let topContentHeight = document.getElementById("top-content").clientHeight;
             let floatingTab = document.getElementById("floating-tab");
 
@@ -206,27 +234,68 @@
                     console.log("button CLICKED");
 
                     if(tabBtnArr[i].id === "msiTabButton"){
-                        smoothScroll(targetMsiTop);
+                        smoothScrollTop(targetMsiTop);
                     }
                     else if(tabBtnArr[i].id === "teamTabButton"){
-                        smoothScroll(targetTeamTop);
+                        smoothScrollTop(targetTeamTop);
                     }
                     else if(tabBtnArr[i].id === "lolTabButton"){
-                        smoothScroll(targetLolTop);
+                        smoothScrollTop(targetLolTop);
                     }
                     else if(tabBtnArr[i].id === "videoTabButton"){
-                        smoothScroll(targetVideoTop);
+                        smoothScrollTop(targetVideoTop);
                     }
                 });
             }
             
-            function smoothScroll(targetTop){
-                console.log(targetTop);
+            function smoothScrollTop(targetTop){
                 $('html, body').animate({
                     scrollTop: targetTop
                 }, speed);
             }
 
+            //Team Selection Left Right Scroll Button
+            let btnTeamLeft = document.getElementsByClassName("btn btn-outline-secondary me-3");
+            let btnTeamRight = document.getElementsByClassName("btn btn-outline-secondary ms-3");
+            let teamCard = document.getElementById("team-card-container");
+            let teamCardWidth = teamCard.getBoundingClientRect().width;
+            let teamCardRightMax = teamCard.scrollWidth;
+
+            let teamScrollAmount = 400;
+            let targetLeft;
+
+            btnTeamLeft[0].addEventListener('click', ()=> {
+                targetLeft = teamCard.scrollLeft - teamScrollAmount;
+                if(targetLeft < 0){
+                    targetLeft = 0;
+                }
+                smoothScrollLeft(targetLeft);
+            });
+
+            btnTeamRight[0].addEventListener('click', ()=> {
+                targetLeft = teamCard.scrollLeft + teamScrollAmount;
+                if(targetLeft + teamCardWidth > teamCardRightMax){
+                    targetLeft = teamCardRightMax - teamCardWidth;
+                }
+                smoothScrollLeft(targetLeft);
+            });
+
+            function smoothScrollLeft(targetLeft){
+                $('#team-card-container').animate({
+                    scrollLeft: targetLeft
+                }, speed);
+            }
+            
+            //Team Selection Image Button
+            let btnTeamImage = document.getElementsByClassName("btn_teamImage");
+            let btnTeamImageSource = document.getElementById("teamImageSelected").firstElementChild;
+
+            for(let i = 0; i < btnTeamImage.length; i++){
+                btnTeamImage[i].addEventListener('click', ()=> {
+                    btnTeamImageSource.src = "./msiTeamImage/msiTeamImage" + (i+1) + ".png";
+                });
+                console.log("./msiTeamImage/msiTeamImage" + (i+1) + ".png");
+            }
         </script>
     </body>
 </html>

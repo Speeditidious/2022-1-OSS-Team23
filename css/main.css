@@ -30,6 +30,12 @@
     margin-bottom: 50px;
 }
 
+.btn_teamImage {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
 #floating-tab {
     width: 100%;
     text-align: center;
@@ -44,6 +50,13 @@
     width: 1080px;
     background: white;
     margin: auto;
+}
+
+#team-card-container {
+    width: 700px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-align: center;
 }
 
 h2 {
