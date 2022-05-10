@@ -45,7 +45,7 @@
             <div id="wrapper">
                 <div id="msi-info">
                     <div class="container">
-                        <br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br>
                         <h2><strong>MSI 정보</strong></h2>
                         <div class="paragraph">
                             <h3>MSI가 뭔가요?</h3>
@@ -193,6 +193,7 @@
             //Floating Tab
             let topContentHeight = document.getElementById("top-content").clientHeight;
             let floatingTab = document.getElementById("floating-tab");
+            let floatingTabHeight = 150;
 
             let isTop = true;
 
@@ -233,19 +234,19 @@
 
                     if(tabBtnArr[i].id === "msiTabButton"){
                         targetMsiTop = window.pageYOffset + targetMsi.getBoundingClientRect().top;
-                        smoothScrollTop(targetMsiTop);
+                        smoothScrollTop(targetMsiTop - floatingTabHeight);
                     }
                     else if(tabBtnArr[i].id === "teamTabButton"){
                         targetTeamTop = window.pageYOffset + targetTeam.getBoundingClientRect().top;
-                        smoothScrollTop(targetTeamTop);
+                        smoothScrollTop(targetTeamTop - floatingTabHeight);
                     }
                     else if(tabBtnArr[i].id === "lolTabButton"){
                         targetLolTop = window.pageYOffset + targetLol.getBoundingClientRect().top;
-                        smoothScrollTop(targetLolTop);
+                        smoothScrollTop(targetLolTop - floatingTabHeight);
                     }
                     else if(tabBtnArr[i].id === "videoTabButton"){
                         targetVideoTop = window.pageYOffset + targetVideo.getBoundingClientRect().top;
-                        smoothScrollTop(targetVideoTop);
+                        smoothScrollTop(targetVideoTop - floatingTabHeight);
                     }
                 });
             }
@@ -295,6 +296,13 @@
             for(let i = 0; i < btnTeamImage.length; i++){
                 btnTeamImage[i].addEventListener('click', ()=> {
                     btnTeamImageSource.src = "./msiTeamImage/msiTeamImage" + (i+1) + ".png";
+                    btnTeamImage[i].style.filter = "brightness(50%)";
+                    btnTeamImage[i].style.zIndex = "3";
+                    for(let j = 0; j < btnTeamImage.length; j++){
+                        if(j != i){
+                            btnTeamImage[j].style.removeProperty("filter");
+                        }
+                    }
                 });
             }
         </script>
