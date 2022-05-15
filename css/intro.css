@@ -1,0 +1,84 @@
+#background-intro{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+body{
+    background-image: url("../main/msiThumbnail.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    width: 400px;
+    height: 60%;
+    position:absolute;
+    top:10%;
+}
+
+#main-container{
+    position: fixed;
+    top: 0px;
+    right: 30%;
+	width: 500px;
+	height: 100%;
+
+    font-weight: 700;
+    font-family: system-ui, serif;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+	line-height:24px;
+	letter-spacing:0;
+	color:#000;
+	margin:auto;
+	background-color: hsla(0,0%,100%,.9);
+}
+
+.container-button{
+    color:rgb(255, 255, 255);
+    background-color:rgb(248, 180, 0);
+}
+
+#intro-content {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+
+    padding: 10px;
+    font-family: system-ui, serif;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    background: white;
+    width: 700px;
+}
+
+
+footer {
+    width: 100%;
+    height: 99999px; /* footer의 높이 */
+    position: absolute;  
+    bottom: 0;
+    left: 0;
+}
+
+/* hover 버튼 예시 */
+.button {
+    background-color: #F8B400;
+    border-color: #125B50;
+    color: #125B50;
+    transition-duration: 0.4s;
+}
+  
+.button:hover {
+    background-color: #125B50; /* Green */
+    border-color: #F8B400;
+    color: #F8B400;
+}
+
+a {
+    text-decoration: none;
+  }
