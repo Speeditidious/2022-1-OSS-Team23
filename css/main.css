@@ -26,8 +26,8 @@
 }
 
 .paragraph {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 50px;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -36,6 +36,11 @@
     padding: 0;
     border: none;
     background: none;
+}
+
+.emphasize_red {
+    color: rgba(255, 54, 54, 1);
+    font-weight: bold;
 }
 
 #floating-tab {
@@ -47,7 +52,11 @@
 
 #main-paragraph {
     width: 100%;
-    background: black;
+    background-attachment: fixed;
+    background-image: url("../main/background_image_temp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #wrapper {
@@ -66,10 +75,10 @@
 h2 {
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-    font-style: bold;
+    font-weight: bold;
 }
 
 h3 {
     font-family: 'Noto Sans KR', sans-serif;
-    font-style: bold;
+    font-weight: bold;
 }
