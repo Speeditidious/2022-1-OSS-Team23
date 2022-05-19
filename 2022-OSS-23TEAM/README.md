@@ -23,13 +23,13 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 <img src="./Image/.JPG" width="250" height="300">
 
 ### 2. Main Page
-상단 탭에서 버튼(MSI, 팀 정보, 롤 정보, 추천 영상 중 하나)을 클릭하면 자동 으로 스크롤을 내려서 알맞은 위치로 이동할 수 있습니다. 
+상단 탭에서 버튼(MSI, 팀 정보, 롤 정보, 추천 영상 중 하나)을 클릭하면 자동 으로 스크롤을 내려서 알맞은 위치로 이동할 수 있습니다.<br> 
 <img src="./Image/.JPG" width="250" height="300">
 
 `2-1 MSI` <br>MSI에 관한 다양한 상세 정보를 볼 수 있습니다.<br>
 <img src="./Image/.JPG" width="250" height="300">
 
-`2-2 팀 정보` <br>각 팀의 로고가 그려진 버튼들이 있는데, 버튼을 클릭하면 그 팀의 사이트(Team Information Page)로 이동합니다. 
+`2-2 팀 정보` <br>각 팀의 로고가 그려진 버튼들이 있는데, 버튼을 클릭하면 그 팀의 사이트(Team Information Page)로 이동합니다. <br>
 ##### 3.로 이동
 <img src="./Image/.JPG" width="250" height="300">
 
