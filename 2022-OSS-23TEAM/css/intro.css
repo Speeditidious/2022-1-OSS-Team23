@@ -1,0 +1,170 @@
+#background-intro{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+body{
+    background-image: url("../LeagueOfLegend-Background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    width: 400px;
+    height: 60%;
+    position:absolute;
+    top:10%;
+}
+
+#main-container{
+
+    position: fixed;
+    top: 0px;
+    right: 20%;
+	width: 500px;
+	height: 1080px;
+
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Black Han Sans', sans-serif;
+
+	line-height:24px;
+	letter-spacing:0;
+	color:#000;
+	margin:auto;
+    border: #ffffff;
+    border-right: 10px;
+    border-left: 10px;
+	background-color: hsla(0,0%,100%,.9);
+
+    animation: maincontainer-slide-in 1s ease-out;
+}
+
+#team-container{
+    
+    position: relative;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	width: 750px;
+
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+
+	line-height:24px;
+	letter-spacing:0;
+	color:#000;
+	margin:auto;
+    border: #ffffff;
+    border-right: 10px;
+    border-left: 10px;
+	background-color: hsla(0,0%,100%,.9);
+
+    animation: teamContainer-fade-in 1s ease-out;
+}
+
+#project-container{
+    
+    position: fixed;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	width: 750px;
+
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+
+	line-height:24px;
+	letter-spacing:0;
+	color:#000;
+	margin:auto;
+    border: #ffffff;
+    border-right: 10px;
+    border-left: 10px;
+	background-color: hsla(0,0%,100%,.9);
+
+    animation: teamContainer-fade-in 1s ease-out;
+}
+
+#intro-content {
+
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+
+    padding: 10px;
+    font-family: serif;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    background: white;
+    width: 700px;
+
+}
+
+#teamname{
+
+    font-weight: 100;
+    border-bottom: 1rem black;
+    margin-bottom: 1rem;
+
+}
+
+footer {
+    width: 100%;
+    height: 2%;
+    position: absolute;  
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+
+/* hover 버튼 예시 */
+.button {
+    background-color:hsla(0,0%,100%,.0);
+    border-color: #125B50;
+    box-shadow: 0px 0px 20px gray;
+    color: #125B50;
+    transition-duration: 0.4s;
+    width: 250px;
+    border-radius: 30px 0px 30px 0px;
+}
+
+#mainpagebutton{
+    width: 300px;
+    height: 120px;
+}
+  
+.button:hover {
+    background-color: rgba(10, 54, 50, 0.8) ; /* Green */
+    box-shadow: 0px 0px 20px #F8B400;
+    border-color: #F8B400;
+    color: #F8B400;
+}
+
+a {
+    text-decoration: none!important;
+    color: white!important;
+}
+
+@keyframes maincontainer-slide-in {
+    from{
+        right: -30%;
+    }to{
+        right: 20%;
+    }
+}
+
+@keyframes teamContainer-fade-in {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
