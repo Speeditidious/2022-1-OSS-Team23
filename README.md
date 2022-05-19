@@ -10,8 +10,8 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 <br>
 
 ## 웹페이지 이용방법
-### 1. Intro 페이지
-팀 소개, 프로젝트 소개, Main page로 구성되어있습니다.<br><br>
+### 1. Intro Page
+팀 소개, 프로젝트 소개, Main Page로 구성되어있습니다.<br><br>
 `1-1 팀 소개` <br> “팀 소개” 버튼을 클릭하면, 팀 소개 창이 나타납니다. <br>
 <img src="./Image/.JPG" width="250" height="300">
 
@@ -22,7 +22,7 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 ##### 2.로 이동
 <img src="./Image/.JPG" width="250" height="300">
 
-### 2. Main 페이지
+### 2. Main Page
 상단 탭에서 버튼(MSI, 팀 정보, 롤 정보, 추천 영상 중 하나)을 클릭하면 자동 으로 스크롤을 내려서 알맞은 위치로 이동할 수 있습니다. 
 <img src="./Image/.JPG" width="250" height="300">
 
@@ -35,11 +35,12 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 `2-3 추천 영상` <br>MSI 소개 영상, 하이라이트 영상이 정리되어 있습니다. <br>
 <img src="./Image/.JPG" width="250" height="300">
 
-`2-4 팀 정보` <br>각 팀의 로고가 그려진 버튼들이 있는데, 버튼을 클릭하면 그 팀의 사이트(Team Information Page)로 이동합니다. <br>
+`2-4 팀 정보` <br>각 팀의 로고가 그려진 버튼들이 있는데, 버튼을 클릭하면 그 팀의 사이트(Team Information Page)로 이동합니다. 
+##### 3.로 이동
 <img src="./Image/.JPG" width="250" height="300">
 <br>
 
-### 3. Msi 참가팀별 소개 페이지
+### 3. Team Information Page
 <img src="./Image/.JPG" width="250" height="300">
 
 
