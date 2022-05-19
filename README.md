@@ -8,7 +8,7 @@ Start with [Intro Page]()<br>
 
 ## 웹페이지 이용방법
 ### 1. Intro 페이지
-팀 소개, 프로젝트 소개, Main page로 구성되어있습니다.<br>
+팀 소개, 프로젝트 소개, Main page로 구성되어있습니다.<br><br>
 `1-1 팀 소개` <br> “팀 소개” 버튼을 클릭하면, 팀 소개 창이 나타납니다. <br>
 <img src="./Image/.JPG" width="500" height="600">
 
