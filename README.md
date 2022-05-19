@@ -10,7 +10,7 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 <br>
 
 ## 웹페이지 이용방법
-### 1. Intro Page
+### 1. Intro Page(HOME)
 팀 소개, 프로젝트 소개, Main Page로 구성되어있습니다.<br><br>
 `1-1 팀 소개` <br> “팀 소개” 버튼을 클릭하면, 팀 소개 창이 나타납니다. <br>
 <img src="./Image/.JPG" width="250" height="300">
