@@ -1,7 +1,5 @@
 # 2022-1-OSS-Team23
 2022-1-OSS Final Team Project
-
-# OSS-9's Project : `Free-python-games`
 [Intro Page]()<br>
 [Main Page]()
 
@@ -22,8 +20,8 @@
 <img src="./Image/.JPG" width="500" height="600">
 
 ### 2. Main 페이지
-<img src="./Image/스도쿠2.JPG" width="500" height="600">
 상단 탭에서 버튼(MSI, 팀 정보, 롤 정보, 추천 영상 중 하나)을 클릭하면 자동 으로 스크롤을 내려서 알맞은 위치로 이동할 수 있습니다. 
+<img src="./Image/스도쿠2.JPG" width="500" height="600">
 
 `2-1 MSI` <br>MSI에 관한 다양한 상세 정보를 볼 수 있습니다.<br>
 <img src="./Image/.JPG" width="500" height="600">
