@@ -2,9 +2,11 @@
 2022-1-OSS Final Team Project <br>
 Start with [Intro Page]()<br>
 (Directly) [Main Page]()
+<br>
 
 ## 프로젝트 목적
 이 프로젝트는 리그 오브 레전드 게임 국제 대회인 LoL MSI가 국내에서 최초로 개최되는 기념으로 대회를 소개하는 웹 페이지 개발을 목적으로 두고 있습니다.
+<br>
 
 ## 웹페이지 이용방법
 ### 1. Intro 페이지
@@ -34,11 +36,13 @@ Start with [Intro Page]()<br>
 
 `2-4 팀 정보` <br>각 팀의 로고가 그려진 버튼들이 있는데, 버튼을 클릭하면 그 팀의 사이트(Team Information Page)로 이동합니다. <br>
 <img src="./Image/.JPG" width="500" height="600">
+<br>
 
 ### 3. Msi 참가팀별 소개 페이지
 <img src="./Image/3.JPG" width="500" height="600">
 
 
+<br>
 
 ## [TEAM OSS-23 Members]
 
