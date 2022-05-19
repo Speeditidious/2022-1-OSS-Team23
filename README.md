@@ -1,7 +1,7 @@
 # 2022-1-OSS-Team23
 2022-1-OSS Final Team Project <br>
 Start with [Intro Page]()<br>
-(Directly)[Main Page]()
+(Directly) [Main Page]()
 
 ## 프로젝트 목적
 이 프로젝트는 리그 오브 레전드 게임 국제 대회인 LoL MSI가 국내에서 최초로 개최되는 기념으로 대회를 소개하는 웹 페이지 개발을 목적으로 두고 있습니다.
