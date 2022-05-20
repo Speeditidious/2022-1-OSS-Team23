@@ -1,0 +1,39 @@
+#quick-menu {
+    position: fixed;
+    top: 50%;
+    margin-top: -50px;
+    left: 10%;
+    width: 100px;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+#quick-menu ul {
+    float:left;
+    width:100%;
+    display:inline-block;
+    *display:inline;
+    border:none;
+}
+
+#quick-menu button {
+    z-index: 6;
+    border: none;
+    width: 100px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#quick-menu button:hover {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
