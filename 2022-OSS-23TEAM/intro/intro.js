@@ -3,13 +3,14 @@ let bgImages = ["Amumu_0.jpg", "Darius_0.jpg", "Fiora_0.jpg", "Garen_0.jpg","Mon
 let bgLen = bgImages.length;
 let background = document.getElementById("background-intro");
 
-let ALTERING_TIMING0 = 240;
-let ALTERING_TIMING1 = 300;
-let ALTERING_TIMING2 = 360;
+let ALTERING_TIMING0 = 4*60;
+let ALTERING_TIMING1 = 5*60;
+let ALTERING_TIMING2 = 6*60;
 
-let count = 0;
+let count = 120;
 let opa = 1;
-let idx = 0;
+let idx = -1;
+
 
 
 //quick-menu
@@ -20,8 +21,13 @@ topBtn.addEventListener("click", () => {
     smoothScrollTop(0);
 })
 
+homeBtn.addEventListener("click", () => {
+    //go to home
+    location.href = "index.html";
+})
+
 //background cycle
-function shuffle(array) { array.sort(() => Math.random() - 0.5); }
+function shuffle(array) { return array.sort(() => Math.random() - 0.5); }
 
 window.addEventListener("load", ()=>{
     //init
@@ -33,11 +39,11 @@ window.addEventListener("load", ()=>{
 let showImages = ()=>{
     count++;
     if(count > ALTERING_TIMING0 && count < ALTERING_TIMING1){
-        opa = 1 + ((ALTERING_TIMING0-count)/60);
+        opa = 1 + ((ALTERING_TIMING0-count) / 60);
         background.style.opacity = opa;
     }else if(count === ALTERING_TIMING1){
         idx++;
-        if(idx === bgLen){idx = 0; shuffle(bgImages);}
+        if(idx === bgLen){idx = 0;}
         background.setAttribute("src",`2022-OSS-23TEAM/intro/${bgImages[idx]}`);
     }else if(count > ALTERING_TIMING1 && count < ALTERING_TIMING2){
         opa = ((count - ALTERING_TIMING1) / 60);

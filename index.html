@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="2022-OSS-23TEAM/css/intro.css">
-    <link rel="stylesheet" type="text/css" href="2022-OSS-23TEAM/css/main.css">
+    <link rel="stylesheet" type="text/css" href="2022-OSS-23TEAM/css/quickmenu.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,16 @@
     
     <title>2022 OSS 23 Team</title>
 </head>
-<body>
+<body style="overflow: hidden;">
+    <div id="quick-menu">
+        <ul style="list-style:none; padding-left:0px">
+            <li><button id="top_btn" style="font-size:1.5em">TOP</button></li>
+            <li><button id="home_btn"><i class="bi bi-house-fill" style="font-size: 2em;"></i></button></li>
+        </ul>
+    </div>
+
     <div id="main-container" class="d-inline-flex flex-column justify-content-evenly align-items-center" z-index>
-        <div id="container" class="d-flex flex-column justify-content-evenly align-items-center mb-5">
+        <div id="wrapper" class="d-flex flex-column justify-content-evenly align-items-center mb-5">
             <img style="width: 400px;" src="2022-OSS-23TEAM/League-of-Legends-Logo-PNG-File.png">
             <div id="teamname" class="my-2">
                 <h1>MSI Info.</h1>
@@ -30,12 +38,7 @@
         </div>
     </div>
     
-    <div id="quick-menu" style="z-index:3;">
-        <ul, style="list-style:none; padding-left:0px">
-            <li><button id="top_btn">TOP</button></li>
-            <li><button id="home_btn">HOME</button></li>
-        </ul>
-    </div>
+
     
     <img src="2022-OSS-23TEAM/LeagueOfLegend-Background.png" id="background-intro" >
 
