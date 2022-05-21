@@ -55,10 +55,10 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 
 ### 3. Team Information Page
 MSI 11개 출전팀들의 페이지로 구성되어 있습니다. 
-<br>(팀 소개 및 소속 리그, 우승 기록과 팀 구성 멤버를 소개합니다.)
-<br>멤버들의 개인 LOL계정을 연동하여, 최근 플레이한 챔피언에 대한 정보를 제공하는 사이트로 이동합니다.<br>
+<br>(팀 소개 및 소속 리그, 우승 기록과 팀 구성 멤버 등을 소개합니다.)<br>
 <img src="image\teampage.jpeg" width="500" height="250">
-
+<br>멤버들의 개인 LOL계정을 연동하여, 최근 플레이한 챔피언에 대한 정보를 제공하는 사이트로 이동합니다.<br>
+<img src="image\member.jpeg" width="500" height="250">
 
 <br/><br/>
 
