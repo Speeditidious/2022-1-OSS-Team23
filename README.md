@@ -45,11 +45,11 @@ LoL MSI는 세계 각 지역에서 스프링 스플릿(봄 시즌)을 제패한 
 <br/>
 
 `2-3 롤정보` <br>초보자나 복귀 유저를 위한 룰, 챔피언 상성 등 여러 정보가 소개되어 있습니다. <br>
-<img src="./Image/.JPG" width="500" height="250">
+<img src="image\롤정보.jpeg" width="500" height="250">
 <br/>
 
 `2-4 추천 영상` <br>MSI 소개 영상, 하이라이트 영상을 제공하고 있습니다. <br>
-<img src="./Image/.JPG" width="500" height="250">
+<img src="image\추천영상.jpeg" width="500" height="250">
 
 <br/><br/><br/>
 
