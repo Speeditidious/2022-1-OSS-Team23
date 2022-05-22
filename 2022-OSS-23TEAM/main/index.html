@@ -376,10 +376,14 @@
                 });
             }
             
+            // function smoothScrollTop(targetTop){
+            //     $('html, body').animate({
+            //         scrollTop: targetTop
+            //     }, speed);
+            // }
+
             function smoothScrollTop(targetTop){
-                $('html, body').animate({
-                    scrollTop: targetTop
-                }, speed);
+                document.documentElement.scrollTop = targetTop;
             }
 
             //Team Selection Left Right Scroll Button

@@ -17,6 +17,10 @@ let idx = -1;
 let topBtn = document.getElementById("top_btn");
 let homeBtn = document.getElementById("home_btn");
 
+function smoothScrollTop(){
+	document.documentElement.scrollTop = 0;
+}
+
 topBtn.addEventListener("click", () => {
     smoothScrollTop(0);
 })
