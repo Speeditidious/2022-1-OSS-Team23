@@ -3,9 +3,9 @@ let bgImages = ["Amumu_0.jpg", "Darius_0.jpg", "Fiora_0.jpg", "Garen_0.jpg","Mon
 let bgLen = bgImages.length;
 let background = document.getElementById("background-intro");
 
-let ALTERING_TIMING0 = 4*60;
-let ALTERING_TIMING1 = 5*60;
-let ALTERING_TIMING2 = 6*60;
+let ALTERING_TIMING0 = 8*60;
+let ALTERING_TIMING1 = 9*60;
+let ALTERING_TIMING2 = 10*60;
 
 let count = 120;
 let opa = 1;
